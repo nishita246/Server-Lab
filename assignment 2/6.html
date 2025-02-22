@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Link Example</title>
+</head>
+<body>
+
+    <h1>Image as a Link</h1>
+
+    <p>Click the image below to visit another page:</p>
+
+    <a href="destination.html">  <img src="image.jpg" alt="Description of the image" width="500" height="300">
+    </a>
+
+    <p>Explanation:</p>
+
+    <ul>
+        <li><code>&lt;a href="destination.html"&gt;</code>: This is the anchor tag, used to create hyperlinks. The `href` attribute specifies the URL of the page you want to link to.  **Important:** Replace `destination.html` with the actual file name or URL of the page you want to link to.</li>
+        <li>The `&lt;img&gt;` tag is placed *inside* the `&lt;a&gt;` tag. This makes the image itself clickable.</li>
+        <li><code>&lt;/a&gt;</code>:  The closing anchor tag.</li>
+    </ul>
+
+    <h2>Linking to a URL</h2>
+    <p>You can also link to an external website:</p>
+    <a href="https://www.example.com">
+        <img src="image.jpg" alt="Link to Example.com" width="300">
+    </a>
+
+    <h2>Relative Paths for Links</h2>
+    <p>Just like with images, you can use relative paths for the `href` attribute:</p>
+    <a href="pages/another_page.html">  <img src="image.jpg" alt="Link to another page" width="300">
+    </a>
+
+
+</body>
+</html>

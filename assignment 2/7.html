@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif; /* Use a common font */
+  }
+  table {
+    width: 50%; /* Adjust as needed */
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  td {
+    padding: 8px;
+    vertical-align: top; /* Align labels and inputs */
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  input[type="reset"] {
+    background-color: #f44336; /* Red */
+  }
+  .optional {
+    font-style: italic;
+    color: #777;
+  }
+</style>
+</head>
+<body>
+
+<h1>Employee Registration Form</h1>
+
+<form>
+<table>
+  <tr>
+    <td><label>Title:</label></td>
+    <td>
+      <input type="radio" name="title" value="Mr"> Mr.
+      <input type="radio" name="title" value="Mrs"> Mrs.
+      <input type="radio" name="title" value="Ms"> Ms.
+    </td>
+  </tr>
+  <tr>
+    <td><label for="firstName">First Name:</label></td>
+    <td><input type="text" id="firstName" name="firstName"></td>
+  </tr>
+  <tr>
+    <td><label for="lastName">Last Name:</label></td>
+    <td><input type="text" id="lastName" name="lastName"></td>
+  </tr>
+  <tr>
+    <td><label for="mailAddress1">Mail Address1:</label></td>
+    <td><input type="text" id="mailAddress1" name="mailAddress1"></td>
+  </tr>
+  <tr>
+    <td><label for="mailAddress2">Mail Address2:</label></td>
+    <td><input type="text" id="mailAddress2" name="mailAddress2"></td>
+  </tr>
+  <tr>
+    <td><label for="city">City:</label></td>
+    <td><input type="text" id="city" name="city"></td>
+  </tr>
+  <tr>
+    <td><label for="state">State:</label></td>
+    <td>
+      <select id="state" name="state">
+        <option value="Gujarat">Gujarat</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td><label for="zip">Zip:</label></td>
+    <td><input type="text" id="zip" name="zip"></td>
+  </tr>
+  <tr>
+    <td><label for="photo">Upload Photo:</label></td>
+    <td><input type="file" id="photo" name="photo"> <span class="optional">No file selected.</span></td>
+  </tr>
+  <tr>
+    <td><label for="email">E-Mail:</label></td>
+    <td><input type="email" id="email" name="email"></td>
+  </tr>
+  <tr>
+    <td><label for="mobile">Mobile:</label></td>
+    <td><input type="tel" id="mobile" name="mobile" value="+91"></td>
+  </tr>
+  <tr>
+    <td><label>Languages known:</label></td>
+    <td>
+      <input type="checkbox" name="language" value="Gujarati"> Gujarati<br>
+      <input type="checkbox" name="language" value="Hindi"> Hindi<br>
+      <input type="checkbox" name="language" value="English"> English<br>
+      <input type="checkbox" name="language" value="Marathi"> Marathi
+    </td>
+  </tr>
+  <tr>
+    <td><label for="additionalInfo">Additional Information:</label></td>
+    <td><textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50">Optional</textarea></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align: center;">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </td>
+  </tr>
+</table>
+</form>
+
+</body>
+</html>

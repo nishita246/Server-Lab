@@ -1,0 +1,44 @@
+<button id="myButton">Click Me</button>
+<img id="myImage" src="image1.jpg">
+<div id="myText">Hello</div>
+<ul id="myList"><li>Item 1</li></ul>
+
+<script>
+  // Change text, style, image
+  document.getElementById("myButton").addEventListener("click", function() {
+    document.getElementById("myText").textContent = "Button Clicked!";
+    document.getElementById("myText").style.color = "red";
+    document.getElementById("myImage").src = "image2.jpg";
+  });
+[cite,8]
+
+  // Hover effect
+  document.getElementById("myText").addEventListener("mouseover", function() {
+    this.style.backgroundColor = "yellow";
+  });
+
+  document.getElementById("myText").addEventListener("mouseout", function() {
+    this.style.backgroundColor = ""; // Reset background
+  });
+[cite, 9]
+
+  // Add/Remove list items
+  function addItem() {
+    let newItemText = prompt("Enter new item:");
+    if (newItemText) {
+      let newItem = document.createElement("li");
+      newItem.textContent = newItemText;
+      document.getElementById("myList").appendChild(newItem);
+    }
+  }
+
+  function removeItem() {
+    let list = document.getElementById("myList");
+    if (list.lastChild) {
+      list.removeChild(list.lastChild);
+    } else {
+      alert("List is empty!");
+    }
+  }
+[cite, 9]
+</script>
